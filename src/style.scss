@@ -1,0 +1,39 @@
+@import "node_modules/@wordpress/base-styles/mixins";
+@include wordpress-admin-schemes();
+
+$sm: 375px;
+$md: 530px;
+$lg: 980px;
+$xl: 1240px;
+
+$sm-min: calc($sm + 1px);
+$md-min: calc($md + 1px);
+$lg-min: calc($lg + 1px);
+$xl-min: calc($xl + 1px);
+
+///
+// Responsive br
+///
+.responsive-br {
+  display: none;
+}
+@media screen and ( max-width: $sm ) {
+	.br-sm {
+    display: block;
+  }
+}
+@media screen and ( min-width: $sm-min ) and ( max-width: $md ) {
+  .br-md {
+    display: block;
+  }
+}
+@media screen and ( min-width: $md-min ) and ( max-width: $lg ) {
+  .br-lg {
+    display: block;
+  }
+}
+@media screen and ( min-width: $lg-min ) {
+  .br-xl {
+    display: block;
+  }
+}

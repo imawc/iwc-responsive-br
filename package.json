@@ -1,0 +1,25 @@
+{
+  "name": "iwc-responsive-br",
+  "version": "0.1.0",
+  "main": "build/index.js",
+  "author": "imawc",
+  "license": "MIT",
+  "devDependencies": {
+    "@wordpress/scripts": "^26.13.0",
+    "prettier": "npm:wp-prettier@^3.0.3",
+    "stylelint": "^15.10.3",
+    "stylelint-config-recess-order": "^4.3.0"
+  },
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "lint": "npm run lint:php && npm run lint:js && npm run lint:style",
+		"lint:php": "composer lint",
+    "lint:js": "wp-scripts lint-js",
+    "lint:style": "wp-scripts lint-style"
+  },
+  "volta": {
+    "node": "16.20.2",
+    "npm": "8.19.4"
+  }
+}

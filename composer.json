@@ -1,0 +1,25 @@
+{
+    "name": "iwc/iwc-responsive-br",
+    "require": {
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "wp-coding-standards/wpcs": "*"
+    },
+    "scripts": {
+        "format": "phpcbf ./ --standard=./phpcs.xml --report-summary --report-source",
+		"phpcs": "phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs",
+        "lint": "phpcs ./ --standard=./phpcs.xml"
+	},
+    "authors": [
+        {
+            "name": "imawc",
+            "email": "ima@ima-wc.jp"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
